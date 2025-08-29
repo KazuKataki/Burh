@@ -1,0 +1,56 @@
+1.n = float(input("Сізде қанша теңге бар: "))
+juzcoin_price = 617
+coins = n / juzcoin_price
+print(f"Сіз {coins:.2f} JUZcoin ала аласыз")
+
+2.h = float(input("Сағат санын енгізіңіз: "))
+days = h / 24
+print(f"{h} сағат = {days:.2f} күн")
+
+3.s = int(input("Секунд санын енгізіңіз: "))
+hours = s / 3600
+print(f"{s} секунд = {hours:.2f} сағат")
+
+4.bytes_count = int(input("Байт санын енгізіңіз: "))
+bits = bytes_count * 8
+print(f"{bytes_count} байт = {bits} бит")
+
+5.m = 1347
+hours = m // 60
+minutes = m % 60
+print(f"{m} минут = {hours} сағат {minutes} минут")
+
+6.s = 209461
+hours = s // 3600
+minutes = (s % 3600) // 60
+seconds = s % 60
+print(f"{s} секунд = {hours} сағат {minutes} минут {seconds} секунд")
+
+7.n = float(input("Жолақы (теңге): "))
+days = 30
+rides_per_day = 2
+total_cost = n * rides_per_day * days
+print(f"Айдостың 1 айдағы шығыны: {total_cost} теңге")
+
+8.file_count = 82
+m = float(input("Әр файлдың көлемі (КБ): "))
+total_bytes = file_count * m * 1024
+print(f"Барлық файл көлемі: {total_bytes} байт")
+
+9.s = 193513
+a = int(input("Әр жолдағы символ саны (a): "))
+b = int(input("Әр беттегі жол саны (b): "))
+n = float(input("Принтер 1 бетті қанша минутта шығарады (n): "))
+
+pages = s / (a * b)
+time_minutes = pages * n
+
+print(f"Кітапты шығару уақыты: {time_minutes:.2f} минут ({pages:.0f} бет)")
+
+10.P = 290
+d = float(input("Бағаны төмендету пайызы (d): "))
+r = float(input("Бағаны көтеру пайызы (r): "))
+
+final_price = P * (1 - d / 100) * (1 + r / 100)
+
+print(f"Соңғы баға: {final_price:.2f} теңге")
